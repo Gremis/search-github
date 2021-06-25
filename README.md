@@ -1,9 +1,9 @@
 <h2 align="center">TESTE FRONTEND COMPASSO</h2>
 
-<h3 align="center">
+<!-- <h3 align="center">
   <img alt="SearchGithub"
     src="" width="380px"/>
-</h3>
+</h3> -->
 <hr/>
 
 ## ⚙️ Tecnologias Usadas:
@@ -16,15 +16,7 @@
 
 ## ⚙️ Explicação da Estrutura
 
-Este desafio consiste em construir uma pequena aplicação, fizemos inspiradas no WhatsApp, por isso optamos por uma interface que nos remetesse ao aplicativo em questão.
-
-Contém uma lista de usuários que simulam um contato do WhatsApp e conterão a imagem do perfil e o nome de cada usuário.
-
-O aplicativo também fornece um filtro de busca, que seleciona os membros por nome.
-
-Para demonstrar a funcionalidade do aplicativo, adicionamos uma região que permite simular a troca de
-mensagens entre duas pessoas, no caso o usuário e um dos contatos presentes na lista.
-
+Este desafio consiste em construir uma pequena aplicação...
 ## Instalação
 
 ## 🏁 Para rodar o projeto:
