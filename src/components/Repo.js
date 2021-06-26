@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Accordion, Alert, ListGroup, Button } from "react-bootstrap";
 import { BASE_URL, client_id, client_secret } from "../constants/url";
+import { BsServer, BsPaperclip } from "react-icons/bs";
 import axios from "axios";
 
 function Repo(props) {
@@ -28,7 +29,7 @@ function Repo(props) {
               eventKey="0"
               onClick={() => getRepos()}
             >
-              Repos
+              <BsServer /> Repos
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
@@ -42,7 +43,9 @@ function Repo(props) {
                 <>
                   {datarepos.map((repo) => (
                     <ListGroup>
-                      <ListGroup.Item key={repo.id}>{repo.name}</ListGroup.Item>
+                      <ListGroup.Item key={repo.id}>
+                        <BsPaperclip /> {repo.name}
+                      </ListGroup.Item>
                     </ListGroup>
                   ))}
                 </>

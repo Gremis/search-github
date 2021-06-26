@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Accordion, Alert, ListGroup, Button } from "react-bootstrap";
 import { BASE_URL, client_id, client_secret } from "../constants/url";
+import { BsUnion, BsPaperclip } from "react-icons/bs";
 import axios from "axios";
 
 function Starred(props) {
@@ -26,21 +27,24 @@ function Starred(props) {
               eventKey="0"
               onClick={() => getStarred()}
             >
-              Starred
+              <BsUnion /> Starred
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               {datastarred.length === 0 && (
                 <Alert variant="warning">
-                  <Alert.Heading>Não tem favoritos ainda</Alert.Heading>
+                  <Alert.Heading>Não tem repositórios mais visitados ainda</Alert.Heading>
                 </Alert>
               )}{" "}
               {datastarred.length !== 0 && (
                 <>
                   {datastarred.map((repo) => (
                     <ListGroup>
-                      <ListGroup.Item key={repo.id}>{repo.name}</ListGroup.Item>
+                      <ListGroup.Item key={repo.id}>
+                        <BsPaperclip /> {" "}
+                        {repo.name}
+                      </ListGroup.Item>
                     </ListGroup>
                   ))}
                 </>
