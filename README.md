@@ -22,8 +22,7 @@ O fluxograma seguinte explica o fluxograma de
 
 <h3 align="center">
   <img alt="Fluxograma GitHub"
-    src="https://github.com/Gremis/search-github/blob/main/public/searchsgithub.png
-" width="380px"/>
+    src="https://github.com/Gremis/search-github/blob/main/public/searchgithub.png" width="380px"/>
 </h3>
 
 ## Instalação
