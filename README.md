@@ -18,11 +18,11 @@ Este desafio consiste em um aplicativo que pesquisa usuário de GitHub por meio 
 - Botão Repos que lista repositórios do usuario pesquisado.
 - Botão Starred que lista os repositorios mais visitados por aquele usuario.
 
-O fluxograma seguinte explica o fluxograma de
+O fluxograma a seguir explica a lógica aplicada na componentização para tornar o aplicativo funcional:
 
 <h3 align="center">
   <img alt="Fluxograma GitHub"
-    src="https://github.com/Gremis/search-github/blob/main/public/searchgithub.png" width="380px"/>
+    src="https://github.com/Gremis/search-github/blob/main/public/searchgithub.png" width="480px"/>
 </h3>
 
 ## Instalação
