@@ -1,15 +1,11 @@
 import { useState, useEffect } from "react";
-import { BASE_URL, client_id, client_secret } from "../constants/url";
-import axios from "axios";
+import { getUser } from "../services/Requests";
 
 const useRequestData = (user, initialState) => {
   const [profileUser, setprofileUser] = useState(initialState);
 
   useEffect(() => {
-    axios
-      .get(
-        `${BASE_URL}/${user}?client_id=${client_id}&client_secret=${client_secret}`
-      )
+    getUser(user)
       .then((response) => {
         if (response.status === 200) {
           setprofileUser(response.data);

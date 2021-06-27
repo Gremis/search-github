@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import { Card, Accordion, Alert, ListGroup, Button } from "react-bootstrap";
-import { BASE_URL, client_id, client_secret } from "../constants/url";
 import { BsServer, BsPaperclip } from "react-icons/bs";
-import axios from "axios";
+import { getRepos } from "../services/Requests";
 
 function Repo(props) {
   const [datarepos, setDatarepos] = useState([]);
 
-  const getRepos = () => {
-    axios
-      .get(
-        `${BASE_URL}/${props.user}/repos?client_id=${client_id}&client_secret=${client_secret}`
-      )
+  const handleClickRepos = (user) => {
+    getRepos(user)
       .then((response) => {
         setDatarepos(response.data);
       })
@@ -27,7 +23,7 @@ function Repo(props) {
               as={Button}
               variant="link"
               eventKey="0"
-              onClick={() => getRepos()}
+              onClick={() => handleClickRepos(props.user)}
             >
               <BsServer /> Repos
             </Accordion.Toggle>
